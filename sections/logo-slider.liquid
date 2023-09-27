@@ -1,0 +1,134 @@
+<section class="section">
+  <div class="section__color-wrapper">
+    <div class="container">
+      <div class="row">
+        <heading-list class="heading-list">
+          {%- for block in section.blocks -%}
+                {%- assign logo = block.settings.logo -%}
+                {% if logo != blank or block.settings.heading != blank %}
+                  <div class="text-item{% if forloop.first %} active{% endif %}">
+                    <h3 class="heading h2">
+                      {{ block.settings.heading }} 
+                    </h3>
+                  </div>
+                {% endif %}
+          {%- endfor -%}
+        </heading-list>
+        <logos-list class="logos-list">
+        {%- for block in section.blocks -%}
+              {%- assign logo = block.settings.logo -%}
+              {% if logo != blank or block.settings.heading != blank %}
+                <div class="logo-item{% if forloop.first %} active{% endif %}">
+                  <img src="{{ logo | img_url: 'master' }}" alt="{{ logo.alt }}">
+                </div>
+              {% endif %}
+        {%- endfor -%}
+        </logos-list>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  #{{ section.id }} {
+    --section-background: {{ section.settings.background }};
+    --heading-color: {{ section.settings.text_color }};
+    --text-color: {{ section.settings.text_color }};
+  }
+  .text-item {
+  display: none;
+}
+
+.text-item.active {
+  display: block;
+}
+</style>
+<script>
+  {
+  let textItems = document.querySelectorAll(".text-item");
+  let logoItems = document.querySelectorAll(".logo-item");
+  
+  let counter = 0;
+  
+  function showNextQuote() {
+    textItems[counter].classList.remove("active");
+    logoItems[counter].classList.remove("active");
+    counter++;
+    
+    if(counter === textItems.length) {
+      counter = 0;
+    }
+    
+    textItems[counter].classList.add("active");
+    logoItems[counter].classList.add("active");
+  }
+
+  setInterval(showNextQuote, 5000);
+
+  for(let i = 0; i < logoItems.length; i++) {
+    logoItems[i].addEventListener("click", function() {
+      textItems[counter].classList.remove("active");
+      logoItems[counter].classList.remove("active");
+      counter = i;
+      logoItems[counter].classList.add("active");
+      textItems[counter].classList.add("active");
+    });
+  }
+  }
+</script>
+
+
+
+{% schema %}
+  {
+  "name": "Logos Slider",
+  "class": "logo-slider",
+  "max_blocks": 12,
+  "tag": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Color"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#000"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Logo",
+      "type": "logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo"
+        },
+        {
+          "type": "textarea",
+          "id": "heading",
+          "label": "Heading"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Logos Slider"
+    }
+  ]
+}  
+{% endschema %}
+
+
+
+
