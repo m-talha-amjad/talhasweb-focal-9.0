@@ -1,0 +1,30 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_title": true,
+        "page_width": "small"
+      }
+    },
+    "e94fe3de-89be-4888-9e0d-ae7eb66e81dd": {
+      "type": "contact-form",
+      "settings": {
+        "title": "Contact Us",
+        "content": "<p>test<\/p>",
+        "text_1_heading": "test1",
+        "text_1_text": "<p>test 23<\/p>",
+        "text_2_heading": "test 55",
+        "text_2_text": "<p>test65<\/p>",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "e94fe3de-89be-4888-9e0d-ae7eb66e81dd"
+  ]
+}

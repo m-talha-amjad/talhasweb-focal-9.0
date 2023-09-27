@@ -1,0 +1,458 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Amsterdam-Vintage-Jewels-vintage-ringen-en-duurzame-sieraden_fc2aff42-0ff8-4709-89ca-9b3cd111caf6.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/5.jpg",
+            "text_position": "bottom_left",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections",
+            "button_2_text": "Shop now",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "slide-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Amsterdam_Vintage_Jewels_vintage_ringen_juwelier_1_9427db88-2533-446e-a6c4-c5c25271c02e.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Amsterdam_Vintage_Jewels_vintage_ringen_juwelier_54760305-f571-4f8b-97ff-1a60c68e2f1e.jpg",
+            "text_position": "bottom_right",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "shop now",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "d7ca1686-8561-48c8-9b8d-f2afe2fd6ef3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Amsterdam-Vintage-Jewels-vintage-ringen-en-duurzame-sieraden.jpg",
+            "text_position": "bottom_center",
+            "subheading": "",
+            "title": "Giftpackaging included on all orders",
+            "button_1_text": "shop now",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "slide-1",
+        "slide-2",
+        "d7ca1686-8561-48c8-9b8d-f2afe2fd6ef3"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "a8f00d5b-a624-4864-9c9b-32834a07d924": {
+          "type": "collection",
+          "settings": {
+            "collection": "rings",
+            "label": "Rings",
+            "button_text": "Rings",
+            "button_url": "shopify:\/\/collections\/rings"
+          }
+        },
+        "39a779c4-d610-4cc8-ad8e-5d5ac6d62264": {
+          "type": "collection",
+          "settings": {
+            "collection": "bracelets",
+            "label": "Bracelets",
+            "button_text": "Bracelets",
+            "button_url": ""
+          }
+        },
+        "2b9474db-f737-4983-a9e9-172405ff751c": {
+          "type": "collection",
+          "settings": {
+            "collection": "earrings",
+            "label": "Earrings",
+            "button_text": "Earrings",
+            "button_url": ""
+          }
+        },
+        "4770a68a-dae5-4e95-8ac1-534e4c1af392": {
+          "type": "collection",
+          "settings": {
+            "collection": "pendants",
+            "label": "Pendants",
+            "button_text": "Pendants",
+            "button_url": ""
+          }
+        },
+        "9ed66f07-d4dc-4c01-8e74-d8472fc2b0e3": {
+          "type": "collection",
+          "settings": {
+            "collection": "necklaces",
+            "label": "Necklaces",
+            "button_text": "Necklaces",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "a8f00d5b-a624-4864-9c9b-32834a07d924",
+        "39a779c4-d610-4cc8-ad8e-5d5ac6d62264",
+        "2b9474db-f737-4983-a9e9-172405ff751c",
+        "4770a68a-dae5-4e95-8ac1-534e4c1af392",
+        "9ed66f07-d4dc-4c01-8e74-d8472fc2b0e3"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Trending items",
+        "content": "",
+        "products_count": 20,
+        "products_per_row": 4,
+        "stack_products": false,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "text-with-icons": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-love",
+            "custom_icon_width": 55,
+            "title": "Premium quality jewellery",
+            "content": "<p>Each item is carefully made and inspected<\/p>"
+          }
+        },
+        "item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "custom_icon_width": 50,
+            "title": "Worldwide shipping",
+            "content": "<p>Ordered before 16:00, shipped today<\/p>"
+          }
+        },
+        "item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-return-box",
+            "custom_icon_width": 50,
+            "title": "Free returns within 14 days",
+            "content": ""
+          }
+        },
+        "item-4": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-gift",
+            "custom_icon_width": 50,
+            "title": "Complimentary insured delivery",
+            "content": "<p>And gift wrapping is included on all orders.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "item-2",
+        "item-1",
+        "item-3",
+        "item-4"
+      ],
+      "settings": {
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "shop-the-look": {
+      "type": "shop-the-look",
+      "settings": {
+        "reveal_on_scroll": true,
+        "label": "Shop the looks"
+      }
+    },
+    "1b8965b6-3974-4293-abc7-9927270024f8": {
+      "type": "gallery",
+      "blocks": {
+        "template--15262108975163__1b8965b6-3974-4293-abc7-9927270024f8-1675203211afa852ea-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Amsterdam_Vintage_Jewels_Classics_Collection-104.jpg",
+            "item_link": "shopify:\/\/collections\/classics",
+            "caption": "<p><a href=\"\/collections\/classics\" title=\"Classics\">CLASSICS COLLECTION<\/a><\/p>"
+          }
+        },
+        "template--15262108975163__1b8965b6-3974-4293-abc7-9927270024f8-1675203211afa852ea-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Amsterdam-VintageJewels-avj-BOLD-collection.jpg",
+            "item_link": "",
+            "caption": "<p><a href=\"\/collections\/bold\" title=\"Bold\">BOLD COLLECTION<\/a><\/p>"
+          }
+        },
+        "template--15262108975163__1b8965b6-3974-4293-abc7-9927270024f8-1675203211afa852ea-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Amsterdam_Vintage_Jewels_avj_signet_rings_collection.png",
+            "item_link": "",
+            "caption": "<p><a href=\"\/collections\/signet-rings\" title=\"Signet rings\">SIGNET RINGS COLLECTION<\/a><\/p>"
+          }
+        },
+        "479d7b6e-2541-4355-9d66-7030d792c027": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/amsterdam-vintage-jewels_essentials_collection.jpg",
+            "item_link": "",
+            "caption": "<p><a href=\"\/collections\/essential-collection\" title=\"Essential\">ESSENTIALS COLLECTION<\/a><\/p>"
+          }
+        },
+        "b080818d-67d9-4a9e-befc-f1475ba60d62": {
+          "type": "image",
+          "settings": {
+            "item_link": "",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15262108975163__1b8965b6-3974-4293-abc7-9927270024f8-1675203211afa852ea-0",
+        "template--15262108975163__1b8965b6-3974-4293-abc7-9927270024f8-1675203211afa852ea-1",
+        "template--15262108975163__1b8965b6-3974-4293-abc7-9927270024f8-1675203211afa852ea-2",
+        "479d7b6e-2541-4355-9d66-7030d792c027",
+        "b080818d-67d9-4a9e-befc-f1475ba60d62"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "shop the collections",
+        "show_arrows": true,
+        "background": "#fbfaf6",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "c0ca5f21-113a-4410-94ba-8776c7db274f": {
+      "type": "logo-slider",
+      "blocks": {
+        "ad68182d-6ce7-428d-9af2-c75f7cbc6b3c": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Elle-logo.jpg",
+            "heading": "ELLE"
+          }
+        },
+        "5b89c0cb-39e7-47bd-b1f8-f45afc6acae6": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/lindanl-logo.jpg",
+            "heading": "LINDA.NL"
+          }
+        },
+        "86901d85-2e4f-4250-8926-c3cc5e361422": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Harpers-logo.jpg",
+            "heading": "BAZAAR"
+          }
+        },
+        "6e697fcb-321c-4d42-9ae7-33553141a9c0": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/vouge-logo.jpg",
+            "heading": "VOGUE"
+          }
+        },
+        "8efa7a7f-d87e-4a5b-9ad7-f95269ce2113": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/jan-logo.jpg",
+            "heading": "JAN"
+          }
+        }
+      },
+      "block_order": [
+        "ad68182d-6ce7-428d-9af2-c75f7cbc6b3c",
+        "5b89c0cb-39e7-47bd-b1f8-f45afc6acae6",
+        "86901d85-2e4f-4250-8926-c3cc5e361422",
+        "6e697fcb-321c-4d42-9ae7-33553141a9c0",
+        "8efa7a7f-d87e-4a5b-9ad7-f95269ce2113"
+      ],
+      "settings": {
+        "background": "rgba(0,0,0,0)",
+        "text_color": "#000000"
+      }
+    },
+    "0f47630f-7a82-4833-8f42-ba0587650b0c": {
+      "type": "logo-list",
+      "disabled": true,
+      "blocks": {
+        "template--15262108975163__0f47630f-7a82-4833-8f42-ba0587650b0c-16740760686fbc1bac-0": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Elle-logo.jpg",
+            "link": ""
+          }
+        },
+        "template--15262108975163__0f47630f-7a82-4833-8f42-ba0587650b0c-16740760686fbc1bac-1": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/lindanl-logo.jpg",
+            "link": ""
+          }
+        },
+        "template--15262108975163__0f47630f-7a82-4833-8f42-ba0587650b0c-16740760686fbc1bac-2": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Harpers-logo.jpg",
+            "link": ""
+          }
+        },
+        "template--15262108975163__0f47630f-7a82-4833-8f42-ba0587650b0c-16740760686fbc1bac-3": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/vouge-logo.jpg",
+            "link": ""
+          }
+        },
+        "f8a3531b-4900-48a1-95e0-d7a48d8abd50": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/jan-logo.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15262108975163__0f47630f-7a82-4833-8f42-ba0587650b0c-16740760686fbc1bac-0",
+        "template--15262108975163__0f47630f-7a82-4833-8f42-ba0587650b0c-16740760686fbc1bac-1",
+        "template--15262108975163__0f47630f-7a82-4833-8f42-ba0587650b0c-16740760686fbc1bac-2",
+        "template--15262108975163__0f47630f-7a82-4833-8f42-ba0587650b0c-16740760686fbc1bac-3",
+        "f8a3531b-4900-48a1-95e0-d7a48d8abd50"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "",
+        "title": "see us shine in",
+        "button_text": "",
+        "button_link": "",
+        "stack_logos": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "logo_background": "rgba(0,0,0,0)"
+      }
+    },
+    "b1f89932-7615-4192-8efb-23593348ab14": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--15262108975163__b1f89932-7615-4192-8efb-23593348ab14-1675185666ad7aa0c9-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Amsterdam_Vintage_Jewels_AVJ_reviews_trustpilot_443cc6e4-225f-4773-885b-cdfbc43e1a37.jpg",
+            "tab_label": "Trustpilot reviews",
+            "subheading": "See our reviews",
+            "title": "Why our customers love us",
+            "content": "<p>When you feel like you own the room, and your hand sparkles with jewels, that is the moment we do it all for.<\/p>",
+            "button_text": "Read our reviews",
+            "button_link": ""
+          }
+        },
+        "c0a59d20-1da0-4553-a92b-d0ae3f1e3e03": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/amsterdam-vintage-jewels-pop-up-store.jpg",
+            "tab_label": "Visit us",
+            "subheading": "Visit us",
+            "title": "See them in person",
+            "content": "<p>Choose the finest vintage jewellery or go for jewellery made of recycled gold; 100% pure and with authentic gemstones. Every piece of jewellery is inspected by our own goldsmith.<\/p>",
+            "button_text": "make an appointment",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15262108975163__b1f89932-7615-4192-8efb-23593348ab14-1675185666ad7aa0c9-0",
+        "c0a59d20-1da0-4553-a92b-d0ae3f1e3e03"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 15,
+        "accent_background": "#e2cfba",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "#c2a784",
+        "button_text_color": "#fcfcfc"
+      }
+    },
+    "5cf11a7f-3035-489c-8813-66fc5ff52bcd": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "SHARE YOUR AVJ STORY WITH US",
+        "content": "<p>More inspiration on our Instagram <a href=\"https:\/\/www.instagram.com\/amsterdamvintagejewels\" title=\"https:\/\/www.instagram.com\/amsterdamvintagejewels\">@amsterdamvintagejewels.com<\/a><\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "c1ee6c7c-5a82-44e3-ade1-361c44c94a1e": {
+      "type": "instafeed",
+      "settings": {
+        "heading_size": 10,
+        "feed_width": 100,
+        "html_area": ""
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "featured-collections",
+    "text-with-icons",
+    "shop-the-look",
+    "1b8965b6-3974-4293-abc7-9927270024f8",
+    "c0ca5f21-113a-4410-94ba-8776c7db274f",
+    "0f47630f-7a82-4833-8f42-ba0587650b0c",
+    "b1f89932-7615-4192-8efb-23593348ab14",
+    "5cf11a7f-3035-489c-8813-66fc5ff52bcd",
+    "c1ee6c7c-5a82-44e3-ade1-361c44c94a1e"
+  ]
+}

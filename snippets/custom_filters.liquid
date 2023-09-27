@@ -1,0 +1,42 @@
+{% assign my_loop = 'Gemstone,Color Stone,Material,Gender' | split: ',' %}
+{% assign check_tag = 'gem_,color_,mat_,gender_' | split: ',' %}
+  {% for name in my_loop %}
+       {% assign parent_loop = forloop.index0 %}
+      {% assign  active_values = 0 %}
+       {% capture filter_options_html %}
+            {%- for filter_value in filter.values -%}
+                  {% if filter_value.label contains check_tag[parent_loop] %} 
+                   <div class="checkbox-container">
+                      <input class="checkbox" type="checkbox" name="{{ filter_value.param_name }}" id="{{ filter_value.param_name | escape }}-{{ forloop.index }}" value="{{ filter_value.value | escape }}" {% if filter_value.active %} {% assign active_values = active_values | plus: 1  %}  checked="checked"{% endif %} {% if filter_value.count == 0 %}disabled{% endif %}>
+                      <label for="{{ filter_value.param_name | escape }}-{{ forloop.index }}">{{ filter_value.label | replace: check_tag[parent_loop], ''  }} ({{ filter_value.count}})&lrm;</label>
+                    </div>
+                  {% endif %}
+                 {%- endfor -%}
+
+         
+       {% endcapture %}  
+
+    
+     <div class="product-facet__filter-item">
+                 <button type="button" is="toggle-button" class="collapsible-toggle text--strong" aria-controls="facet-filter-filter.tag_{{ name }}" aria-expanded="false">
+                    {{ name  }}
+                    {% if active_values > 0 %}
+                      <span>{{ active_values }}</span>
+                    {% endif %} 
+                    <svg focusable="false" width="12" height="8" class="icon icon--chevron icon--inline  " viewBox="0 0 12 8">
+                       <path fill="none" d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.2"></path>
+                    </svg>
+                 </button>
+                 <collapsible-content animate-items="" id="facet-filter-filter.tag_{{ name }}" class="collapsible" style="overflow: hidden;">
+                    <div class="collapsible__content">
+                   
+                        {{ filter_options_html }}
+                      
+                    </div>
+                    <div class="filter-apply-wrap">
+                      <button type="button"  data-action="clear-active-filter"  class="filter-apply-item reset">Reset</button>
+                      <button type="button" data-filter-submit class="filter-apply-item apply">Save</button>
+                    </div>
+                 </collapsible-content>
+        </div>
+      {% endfor %} 

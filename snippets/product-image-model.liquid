@@ -1,0 +1,220 @@
+{% if  product.media.size > 0 %}
+    <link rel="stylesheet" href="{{ 'product-image-modal.css' | asset_url }}">
+   
+{% endif %}  
+
+
+
+<product-modal id="ProductModal-{{ section.id }}" class="product-media-modal media-modal">
+    <div class="product-media-modal__dialog" role="dialog" aria-label="{{ 'products.modal.label' | t }}" aria-modal="true" tabindex="-1">
+      
+      <button id="ModalClose-{{ section.id }}" type="button" class="product-media-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" fill="none" viewBox="0 0 18 17">
+      <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
+    </svg>
+      </button>
+
+      <div class="product-media-modal__content gradient" role="document" aria-label="{{ 'products.modal.label' | t }}" tabindex="0" >
+        {%- liquid
+          if product.selected_or_first_available_variant.featured_media != null
+            assign media = product.selected_or_first_available_variant.featured_media
+            render 'product-media-modal', media: media, loop: section.settings.enable_video_looping, variant_image: section.settings.hide_variants
+          endif
+        -%}
+
+        {%- for media in product.media -%}
+          {%- liquid
+            if section.settings.hide_variants and variant_images contains media.src
+              assign variant_image = true
+            else
+              assign variant_image = false
+            endif
+
+            unless media.id == product.selected_or_first_available_variant.featured_media.id
+              render 'product-media-modal', media: media, loop: section.settings.enable_video_looping, variant_image: variant_image
+            endunless
+          -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </product-modal>
+
+<script>
+const trapFocusHandlers = {};
+
+function pauseAllMedia() {
+  document.querySelectorAll('.js-youtube').forEach((video) => {
+    video.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+  });
+  document.querySelectorAll('.js-vimeo').forEach((video) => {
+    video.contentWindow.postMessage('{"method":"pause"}', '*');
+  });
+  document.querySelectorAll('video').forEach((video) => video.pause());
+  document.querySelectorAll('product-model').forEach((model) => {
+    if (model.modelViewerUI) model.modelViewerUI.pause();
+  });
+}  
+
+function trapFocus(container, elementToFocus = container) {
+  var elements = getFocusableElements(container);
+  var first = elements[0];
+  var last = elements[elements.length - 1];
+
+  removeTrapFocus();
+
+  trapFocusHandlers.focusin = (event) => {
+    if (
+      event.target !== container &&
+      event.target !== last &&
+      event.target !== first
+    )
+      return;
+
+    document.addEventListener('keydown', trapFocusHandlers.keydown);
+  };
+
+  trapFocusHandlers.focusout = function() {
+    document.removeEventListener('keydown', trapFocusHandlers.keydown);
+  };
+
+  trapFocusHandlers.keydown = function(event) {
+    if (event.code.toUpperCase() !== 'TAB') return; // If not TAB key
+    // On the last focusable element and tab forward, focus the first element.
+    if (event.target === last && !event.shiftKey) {
+      event.preventDefault();
+      first.focus();
+    }
+
+    //  On the first focusable element and tab backward, focus the last element.
+    if (
+      (event.target === container || event.target === first) &&
+      event.shiftKey
+    ) {
+      event.preventDefault();
+      last.focus();
+    }
+  };
+
+  document.addEventListener('focusout', trapFocusHandlers.focusout);
+  document.addEventListener('focusin', trapFocusHandlers.focusin);
+
+  elementToFocus.focus();
+}
+
+function removeTrapFocus(elementToFocus = null) {
+  document.removeEventListener('focusin', trapFocusHandlers.focusin);
+  document.removeEventListener('focusout', trapFocusHandlers.focusout);
+  document.removeEventListener('keydown', trapFocusHandlers.keydown);
+
+  if (elementToFocus) elementToFocus.focus();
+}
+function getFocusableElements(container) {
+  return Array.from(
+    container.querySelectorAll(
+      "summary, a[href], button:enabled, [tabindex]:not([tabindex^='-']), [draggable], area, input:not([type=hidden]):enabled, select:enabled, textarea:enabled, object, iframe"
+    )
+  );
+}
+  
+class ModalDialog extends HTMLElement {
+  constructor() {
+    super();
+    this.querySelector('[id^="ModalClose-"]').addEventListener(
+      'click',
+      this.hide.bind(this, false)
+    );
+    this.addEventListener('keyup', (event) => {
+      if (event.code.toUpperCase() === 'ESCAPE') this.hide();
+    });
+    if (this.classList.contains('media-modal')) {
+      this.addEventListener('pointerup', (event) => {
+        if (event.pointerType === 'mouse' && !event.target.closest('deferred-media, product-model')) this.hide();
+      });
+    } else {
+      this.addEventListener('click', (event) => {
+        if (event.target === this) this.hide();
+      });
+    }
+  }
+
+  connectedCallback() {
+    if (this.moved) return;
+    this.moved = true;
+    document.body.appendChild(this);
+  }
+
+  show(opener) {
+    this.openedBy = opener;
+    const popup = this.querySelector('.template-popup');
+    document.body.classList.add('overflow-hidden');
+    this.setAttribute('open', '');
+    if (popup) popup.loadContent();
+    trapFocus(this, this.querySelector('[role="dialog"]'));
+    window.pauseAllMedia();
+  }
+
+  hide() {
+    document.body.classList.remove('overflow-hidden');
+    document.body.dispatchEvent(new CustomEvent('modalClosed'));
+    this.removeAttribute('open');
+    removeTrapFocus(this.openedBy);
+    window.pauseAllMedia();
+  }
+}
+customElements.define('modal-dialog', ModalDialog);
+
+
+
+if (!customElements.get('product-modal')) {
+  customElements.define('product-modal', class ProductModal extends ModalDialog {
+    constructor() {
+      super();
+    }
+
+    hide() {
+      super.hide();
+    }
+
+    show(opener) {
+      super.show(opener);
+      this.showActiveMedia();
+    }
+
+    showActiveMedia() {
+      this.querySelectorAll(`[data-media-id]:not([data-media-id="${this.openedBy.getAttribute("data-media-id")}"])`).forEach((element) => {
+          element.classList.remove('active');
+        }
+      )
+      const activeMedia = this.querySelector(`[data-media-id="${this.openedBy.getAttribute("data-media-id")}"]`);
+      const activeMediaTemplate = activeMedia.querySelector('template');
+      const activeMediaContent = activeMediaTemplate ? activeMediaTemplate.content : null;
+      activeMedia.classList.add('active');
+      activeMedia.scrollIntoView();
+
+      const container = this.querySelector('[role="document"]');
+      container.scrollLeft = (activeMedia.width - container.clientWidth) / 2;
+
+      if (activeMedia.nodeName == 'DEFERRED-MEDIA' && activeMediaContent && activeMediaContent.querySelector('.js-youtube'))
+        activeMedia.loadContent();
+    }
+  });
+}
+  
+
+
+
+class ModalOpener extends HTMLElement {
+  constructor() {
+    super();
+
+   
+    this.addEventListener('click', () => {
+      const modal = document.querySelector(this.getAttribute('data-modal'));
+      if (modal) modal.show(this);
+    });
+  }
+}
+customElements.define('modal-opener', ModalOpener);
+
+
+</script>        

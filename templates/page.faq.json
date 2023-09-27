@@ -1,0 +1,67 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "eb5e3d96-9e18-42a8-a3ca-736a5605f4f2": {
+      "type": "faq",
+      "blocks": {
+        "template--15262109073467__eb5e3d96-9e18-42a8-a3ca-736a5605f4f2-167139706545bd3ab5-0": {
+          "type": "category",
+          "settings": {
+            "title": "Items and Stock"
+          }
+        },
+        "template--15262109073467__eb5e3d96-9e18-42a8-a3ca-736a5605f4f2-167139706545bd3ab5-1": {
+          "type": "question",
+          "settings": {
+            "title": "How do I know which ring size I need?",
+            "answer": "<p>We have a few tips and tricks to help you find your perfect fit.<\/p><p>If you already own a ring that fits, simply measure the inner diameter of <br\/>the ring on a ruler (not including the edge). The measurement in <br\/>millimetres is your European ring size. <\/p><p>You can also place the ring on the circles of our size guide – scaled to 100% and printed – to easily check. <\/p><p>Alternatively, place the ring on these circles. The circle that matches the inner edge of the ring indicates your size. <\/p><p>Without<br\/> using a ring, cut out and wrap our Amsterdam Vintage Jewels measurer <br\/>around your finger (scaled to 100% and printed). The number that meets <br\/>the dotted lines is your ring size. <\/p><p>Our professionals are happy to help you too. Book an appointment at <br\/>Amsterdam Vintage Jewels HQ for expert assistance and to try on your <br\/>favourite rings.<\/p><p>Extra tips:<\/p><p>Every<br\/> finger is different and your fingers may differ in size on each hand. <br\/>Always measure your ring size on the finger you want to wear the ring <br\/>on. Take the thickness of the ring into account: the thicker the ring, <br\/>the tighter it will sit. With a very thick ring, take half a size bigger<br\/> and with a very thin ring, half a size smaller.<\/p><p>If you are in doubt between two sizes, take the larger size to be sure.<\/p><p>Only<br\/> measure your finger when your hands are at a normal temperature. Heat <br\/>and cold make your fingers vary in size. It helps to measure at two <br\/>different times on two different days to be sure you are right. <\/p><p>If<br\/> you have a ring with a stone in mind, it’s even more important to <br\/>measure accurately so the stone doesn’t turn when you wear the ring.<\/p><p>We don’t accept returns of engraved items. Therefore, it’s best to fit a ring before you have it engraved.<\/p><p>Use this table to convert your ring size from circumference to diameter or vice versa.<\/p>"
+          }
+        },
+        "template--15262109073467__eb5e3d96-9e18-42a8-a3ca-736a5605f4f2-167139706545bd3ab5-2": {
+          "type": "question",
+          "settings": {
+            "title": "How long will it take to get my order?",
+            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
+          }
+        },
+        "template--15262109073467__eb5e3d96-9e18-42a8-a3ca-736a5605f4f2-167139706545bd3ab5-3": {
+          "type": "category",
+          "settings": {
+            "title": "Payments"
+          }
+        },
+        "template--15262109073467__eb5e3d96-9e18-42a8-a3ca-736a5605f4f2-167139706545bd3ab5-4": {
+          "type": "question",
+          "settings": {
+            "title": "Which payment methods do you accept?",
+            "answer": "<p>We accept iDeal, PayPal, Apple Pay, Mastercard, Visa and Klarna.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15262109073467__eb5e3d96-9e18-42a8-a3ca-736a5605f4f2-167139706545bd3ab5-0",
+        "template--15262109073467__eb5e3d96-9e18-42a8-a3ca-736a5605f4f2-167139706545bd3ab5-1",
+        "template--15262109073467__eb5e3d96-9e18-42a8-a3ca-736a5605f4f2-167139706545bd3ab5-2",
+        "template--15262109073467__eb5e3d96-9e18-42a8-a3ca-736a5605f4f2-167139706545bd3ab5-3",
+        "template--15262109073467__eb5e3d96-9e18-42a8-a3ca-736a5605f4f2-167139706545bd3ab5-4"
+      ],
+      "settings": {
+        "show_navigation": true,
+        "title": "",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "eb5e3d96-9e18-42a8-a3ca-736a5605f4f2"
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_title": true,
+        "page_width": "small"
+      }
+    },
+    "19e1d9c1-a830-412a-8547-2b99d2afd1ad": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "reveal_on_scroll": true,
+        "section_height": "small",
+        "image": "shopify:\/\/shop_images\/AmsterdamVintageJewels-IsabelleBucx-40.jpg",
+        "subheading": "our story",
+        "title": "authentic, stylish and carefully selected.",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "bottom_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "0dda4e9b-523d-4984-821f-8d807f6e1ea9": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "How our curated collection began",
+        "title": "",
+        "content": "<p>When you feel like you own the room – and your hand sparkles with jewels – that is the moment we do it all for.<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "c759624d-93f6-4f4b-af1a-b279f0e76e97": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--15262109106235__c759624d-93f6-4f4b-af1a-b279f0e76e97-1671363389527e423b-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Home_page_CC.jpg",
+            "tab_label": "Start of our journey",
+            "subheading": "Start of our jorney",
+            "title": "Amsterdam Vintage Jewels began in Amsterdam",
+            "content": "<p>Born from a shared love of fashion, history and vintage treasures. On our travels all over the world, which included countless visits to boutiques and markets, we realised that our favourite fashion finds of all are statement-making vintage gems. Since then, we have developed our style in line with the world’s best.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "91d92b77-bb32-42e7-80e3-1df1e5500d8d": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Foto_ons_verhaal_Links.jpg",
+            "tab_label": "Your style",
+            "subheading": "Your style",
+            "title": "AVJ understands your discerning style",
+            "content": "<p>And what you instantly fall in love with. We know that you love to mix today’s high fashion with gemstones from eras past. And we know that your personal taste shares traits with our jewels – it’s authentic, rare and one-of-a-kind.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15262109106235__c759624d-93f6-4f4b-af1a-b279f0e76e97-1671363389527e423b-0",
+        "91d92b77-bb32-42e7-80e3-1df1e5500d8d"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 20,
+        "accent_background": "#d6e8ed",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1b620897-74ef-4b1b-b633-38c7078e393f": {
+      "type": "testimonials",
+      "blocks": {
+        "template--15262109106235__1b620897-74ef-4b1b-b633-38c7078e393f-1671364076f2172a1a-0": {
+          "type": "testimonial",
+          "settings": {
+            "content": "Our jewels give you a chance to connect world history with your wardrobe. The stories behind these treasures (and the inspiring women who once wore them) are preserved forever, sparkling around your fingers.",
+            "author": "Caitlin & Murat - Founders of AVJ"
+          }
+        }
+      },
+      "block_order": [
+        "template--15262109106235__1b620897-74ef-4b1b-b633-38c7078e393f-1671364076f2172a1a-0"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "",
+        "title": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "d36d6765-74fe-4b35-9b2f-3df410a2f3ba": {
+      "type": "timeline",
+      "blocks": {
+        "03584097-3153-40e8-a04c-5da23dbc3bd1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/amsterdam-vintage-jewels-avj_art_deco_antique_jewellery_vintage.jpg",
+            "label": "before 1920",
+            "title": "A BRIEF HISTORY OF ANTIQUE JEWELRY",
+            "content": "<p>From Victorian, Edwardian or Art Noveau jewellery times to todays styles, but our love for has never faded.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "template--15262109106235__d36d6765-74fe-4b35-9b2f-3df410a2f3ba-1671392931f926a052-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/amsterdam-vintage-jewels-avj_art_deco_styles_vintage_sieraden.jpg",
+            "label": "1930 - 1940 Art Deco",
+            "title": "Start of a jewellery revolution",
+            "content": "<p>Our contemporary AVJ designers are inspired by the surprisingly extravagant jewellery of this period.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "template--15262109106235__d36d6765-74fe-4b35-9b2f-3df410a2f3ba-1671392931f926a052-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Amsterdam-Vintage-Jewels-avj-founden-store-vintage-jewellery.jpg",
+            "label": "2019 AVJ is Born",
+            "title": "AVJ",
+            "content": "<p>mooie opening van deze winkel man. Wauw echt moooi<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "template--15262109106235__d36d6765-74fe-4b35-9b2f-3df410a2f3ba-1671392931f926a052-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schermafbeelding_2023-01-31_om_23.54.14.png",
+            "label": "2020 - designing our own",
+            "title": "New era of Conscious Collections",
+            "content": "<p>Inspired by bold woman from time history our collections are made of 14k recycled gold and real authentic gemstones.<\/p>",
+            "button_text": "Discover our collections",
+            "button_link": "shopify:\/\/collections\/conscious-collection"
+          }
+        }
+      },
+      "block_order": [
+        "03584097-3153-40e8-a04c-5da23dbc3bd1",
+        "template--15262109106235__d36d6765-74fe-4b35-9b2f-3df410a2f3ba-1671392931f926a052-0",
+        "template--15262109106235__d36d6765-74fe-4b35-9b2f-3df410a2f3ba-1671392931f926a052-1",
+        "template--15262109106235__d36d6765-74fe-4b35-9b2f-3df410a2f3ba-1671392931f926a052-2"
+      ],
+      "settings": {
+        "subheading": "Our passion for jewellery",
+        "title": "A never ending story",
+        "text_position": "middle",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "#000000",
+        "item_background": "#b2b1b2",
+        "item_text_color": "#ffffff"
+      }
+    },
+    "fc5126bf-531f-4933-a32c-e61b3dbcf8ba": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--15282033918011__fc5126bf-531f-4933-a32c-e61b3dbcf8ba-1675204914b6b16992-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "conscious-collection",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15282033918011__fc5126bf-531f-4933-a32c-e61b3dbcf8ba-1675204914b6b16992-0"
+      ],
+      "settings": {
+        "subheading": "popular",
+        "title": "shop our bestsellers",
+        "content": "",
+        "products_count": 8,
+        "products_per_row": 4,
+        "stack_products": false,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "19e1d9c1-a830-412a-8547-2b99d2afd1ad",
+    "0dda4e9b-523d-4984-821f-8d807f6e1ea9",
+    "c759624d-93f6-4f4b-af1a-b279f0e76e97",
+    "1b620897-74ef-4b1b-b633-38c7078e393f",
+    "d36d6765-74fe-4b35-9b2f-3df410a2f3ba",
+    "fc5126bf-531f-4933-a32c-e61b3dbcf8ba"
+  ]
+}
